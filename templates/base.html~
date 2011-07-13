@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>  
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <link href="{{MEDIA_URL}}/css/style.css" rel='stylesheet' type='text/css'> 
+    <title>   </title>
+    <script type="text/javascript"
+        src="http://maps.google.com/maps/api/js?sensor=true">
+    </script>
+   
+  </head>
+  <body>
+    <div class="" id="wrapper">
+      <div id="head">
+        <div id="head-wrapper">
+          <div id="company-title">
+            <div id="company-title-wrapper">
+              {% if request.path != "/" %}
+              <a href="/">
+                <img border="0"  src="{{MEDIA_URL}}images/logo.png" title='ООО ИНПФ "Техпромремонт ЛТД"' />
+              </a>
+              {% else %}
+                <a href="#about">
+                    <img src="{{MEDIA_URL}}images/logo.png" title='ООО ИНПФ "Техпромремонт ЛТД"' />
+                </a>
+              {% endif %}
+            </div>
+            
+            <div id="icons-menu">
+                <a href="/">
+                    <img src="{{MEDIA_URL}}/images/home_icon.gif" alt="Домой"/>
+                </a>
+                <a href="/contacts">
+                    <img src="{{MEDIA_URL}}/images/mail_icon.gif" alt="Отправить письмо"/>
+                </a>
+                <a href="javascript: void(0)">
+                    <img src="{{MEDIA_URL}}/images/sitemap_icon.gif" alt="Карта сайта"/>
+                </a>
+
+            </div>
+            
+            <div style="clear: both"></div>
+          </div>
+          <div id="head-image-container">
+            <img src="{{MEDIA_URL}}/images/top-image.jpg">
+          </div>
+          <div id="head-menu">
+            <table cellpadding="0" cellspaceing="0">
+              <tr valign="top">
+                <td class="border-right"><a href="/" onclick="">Главная</a></td>
+                <td class="border-right">
+                    <a href="/avtoremont" onclick="">Авторемонт &#9660;</a>
+                        <div class="main_sub_menu">
+                            <ul id="sub-menu">
+                                <li><a href="/avto/gallery" onclick="">Фотогаллерея</a></li>
+                                <li><a href="/avtoremont/#map" onclick="">Карта проезда к СТО</a></li>
+                                <li><a href="/avto/info" onclick="">Cоветы автовладельцам</a></li>
+                                <li><a href="/avto/prices" onclick="">Цены</a></li>
+                            </ul>
+                        </div>   
+                </td>
+                <td class="border-right">
+                    <a href="javascript: void(0)" onclick="">Продукци и услуги &#9660;</a>
+                    <div class="main_sub_menu">
+                        <ul id="sub-menu">
+                            <li><a href="/products" onclick="">Готовая продукция</a></li>
+                            <li><a href="/uslugi" onclick="">Услуги</a></li>
+                            <li><a href="/patenty" onclick="">Сертификаты и патенты</a></li>
+                        </ul>   
+                    </div>
+
+                </td>
+                <td class="border-right">
+                    <a href="javascript: void(0)" onclick="">Результаты &#9660;</a>
+                    <div class="main_sub_menu">
+                        <ul id="sub-menu">
+                            <li><a href="/clients" onclick="">Наши заказчики</a></li>
+                            <li><a href="/results/tech/" onclick="">Технические результаты</a></li>
+                            <li><a href="/results/econom/" onclick="">Экономические результаты</a></li>
+                        </ul>   
+                    </div>
+                    
+                </td>
+                <td class="border-right">
+                    <a href="javascript: void(0)" onclick="">Научная деятельность &#9660;</a>
+                    <div class="main_sub_menu">
+                        <ul id="sub-menu">
+                            <li><a href="/articles" onclick="">Статьи и комментарии</a></li>
+                            <li><a href="javascript: void(0)" onclick="">Конференции и семинары</a></li>
+                            <li><a href="/experts" onclick="">Эксперты и консультанты</a></li>
+                            <li><a href="/research" onclick="">Исследования и испытания</a></li>
+                            <li><a href="/resource" onclick="">Описание технологии ГМТ</a></li>
+                        </ul>   
+                    </div>                    
+                </td>
+                <td >
+                    <a href="javascript: void(0)" onclick="">Обратная связь &#9660;</a>
+                    <div class="main_sub_menu">
+                        <ul id="sub-menu">                    
+                            <li><a href="/contacts" onclick="">Контакты</a></li>
+                            <li><a href="javascript: void(0)" onclick="">Отзывы клиентов</a></li>
+                            <li><a href="javascript: void(0)" onclick="">Вопросы и ответы</a></li>
+                        </ul>
+                    </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        
+{#        <div id="page-title">{% block pagetitle %}<h1>Главная</h1>{% endblock %}</div> #}
+        {% block breadcrumbs %}
+        {% endblock %}
+      </div>
+      <div id="content-area">
+        <div id="content">
+
+        {% block content %}
+        {% endblock %}
+        
+        </div>
+
+        <div style="clear: both;"></div>
+        {% block navigation %}
+        {% endblock %}
+      </div>
+    </div>
+    <div id="footer">
+      <div id="footer-wrapper">
+        <div id="copyright" align="right">
+          2011&copy;ООО ИНПФ «Техпромремонт ЛТД»         
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

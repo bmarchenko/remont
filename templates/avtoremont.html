@@ -1,0 +1,241 @@
+{% extends 'base.html' %}
+
+{% block breadcrumbs %}
+    <div class="breadcrumbs">
+        <a href="/">Главная</a>
+        &#9658;
+        Авторемонт
+        
+    </div>
+    {% endblock %}
+
+{% block content %}
+
+<h1>Авторемонт</h1>
+
+<p>
+     
+     <div class="img-right-container" style="float: right; margin-left: 20px;">
+        <img  width="250" src="{{MEDIA_URL}}/images/avtoremont-2.jpg" /><br />
+        <img  width="250" src="{{MEDIA_URL}}/images/avtoremont-3.jpg" /><br />
+       <img  width="250" src="{{MEDIA_URL}}/images/avtoremont-1.jpg" />
+     </div>
+     
+     <ul style="font-size: 110%">
+        <li><a href="/avto/gallery" onclick="">Фотогаллерея</a>&nbsp;<img src="{{MEDIA_URL}}/images/pictures.png"></li>
+        <li><a href="#map" onclick="">Карта проезда к СТО</a></li>
+        <li><a href="/avto/info" onclick="">Cоветы автовладельцам</a></li>
+        <li><a href="/avto/prices" onclick="">Цены</a></li>
+     </ul>   
+
+<FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt"><p STYLE="font-weight: normal">Вы
+используете хорошее масло, регулярно
+проводите техническое обслуживание…
+ Вам кажется, что Вы делаете всё, чтобы
+двигатель работал вечно. Но со временем
+замечаете, что дымок из выхлопной трубы
+начинает приобретать сизый, а позже, и
+синеватый оттенок. Вам приходится всё
+чаще и чаще доливать масло, стрелка
+указателя топлива «падает» на глазах,
+автомобиль теряет былую «резвость» …
+Всё это следствия. Причина – </SPAN><B>износ</B></FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">Двигатель
+внутреннего сгорания, обладая большой
+долговечностью, теряет свой ресурс
+вследствие быстрого засорения системы
+смазки продуктами приработки и износа
+пар трения деталей цилиндропоршневой
+группы, газораспределительного механизма
+и т. д.                                                          
+Существенно увеличить ресурс двигателя
+можно за счёт применения препаратов,
+управляющих процессами трения и износа.
+Современный товарный авторынок насыщен
+большим количеством подобного рода
+препаратов.</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt"><B>По
+характеру действия на локальные зоны
+трения их можно разделить на три большие
+группы:</B></FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><B>I</B></SPAN><B>
+</B>– присадки, формирующие на поверхности
+трения слой мягких металлов, разделяющий
+эти поверхности («РИМЕТ», “<SPAN LANG="en-US">Lubrifilm</SPAN>”,
+«Ресурс»);</FONT></FONT></P>
+
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><B>II</B></SPAN>
+– присадки, активирующие силы сцепления
+смазочного масла с поверхностью
+трения(поверхностно-активные вещества-ПАВ)
+(«Аспект-модификатор», “<SPAN LANG="en-US">PMF</SPAN>-2000”,
+«Форум», “<SPAN LANG="en-US">Slider</SPAN>-2000”);</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><B>III</B></SPAN>
+– кондиционеры металла, генерирующие
+на поверхностях трения ультратонкий
+слой нового разделительного материала
+в процессе физико-химических превращений
+(“<SPAN LANG="en-US">ER</SPAN>”, <SPAN LANG="en-US">FENOM</SPAN>”).</FONT></FONT></P>
+
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">Эффективность
+присадок <B>первой группы</B> крайне
+ограничена по времени работы, кроме
+того, тонкий разделительный слой мягких
+металлов не предохраняет поверхности
+трения от задиров при прекращении
+циркуляции смазки.</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">Действие
+присадок <B>второй группы</B> сильно
+зависит от их достаточной концентрации
+в смазочном масле. Такие присадки не
+являются антифрикционными, даже наоборот
+способны увеличивать сопротивление
+трения. Высокие концентрации таких
+присадок влияют на реологию масла.</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt"><B>Кондиционеры
+металла</B> позволяют резко улучшить
+противоизносные и, особенно противозадирные
+свойства базового масла, но не обладают
+антифрикционными свойствами и в силу
+сложности физико-химических превращений
+не обладают универсальностью по
+материалам и режимам работы узлов
+трения.</FONT></FONT></P>
+
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">Принципиально
+другими по характеру воздействия
+являются <B>геомодификаторы трения</B>
+<B>(ГМТ).</B> Эти препараты, изготавливаются
+на основе природных минералов
+ультраосновных пород - слоистых силикатов.</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt"><B>ГМТ</B>,
+попадая в зону трения, вносят структурные
+изменения в поверхность трения, которые
+способны её модифицировать в триботехнически
+выгодном направлении. Основными
+преимуществами геомодификаторов трения
+являются:</FONT></FONT></P>
+<UL>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">способность
+	создавать динамические защитные плёнки,
+	образованные тонкодисперсными продуктами
+	износа и самого ГМТ в виде <B>к</B><B>вазисжиженного
+	</B>слоя, что позволяет многократно
+	снижать скорость изнашивания узлов
+	трения;</FONT></FONT></P>
+
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">смещение
+	характеристик ближе к гидродинамическому
+	трению, и, следовательно, снижать
+	механические потери;</FONT></FONT></P>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">при
+	неизменном спектре режимов работы узла
+	трения, модифицированный слой сохраняется
+	вплоть до термоциклического усталостного
+	разрушения;</FONT></FONT></P>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">химическая,
+	электрическая нейтральность и
+	экологическая чистота природного
+	продукта.</FONT></FONT></P>
+	<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+	<FONT FACE="Arial, sans-serif"><SPAN STYLE="font-weight: normal"><FONT SIZE=2 STYLE="font-size: 11pt">Но
+	наиболее отличительным свойством ГМТ
+	является возможность восстановления
+	узлов трения двигателей, механизмов и
+	устройств за счёт инициирования
+	самоорганизующихся трибопроцессов в
+	направлении восстановления физических
+	связей поверхностного слоя с
+	тонкодисперсной средой основного
+	материала в смазочной среде двигателей
+	внутреннего сгорания, механизмов,
+	устройств.</FONT></SPAN></FONT></P>
+</UL>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">Восстановление
+геометрических размеров изношенных
+деталей происходит на основе
+самоорганизующихся процессов из
+исходного материала трибоузла и материала
+тонкодисперсного природного минерала.</FONT></FONT></P>
+
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">Обычно
+стационарное состояние пограничного
+слоя трибоузла соответствует динамическому
+равновесию процессов разрушения и
+восстановления физических связей.
+Изношенная деталь находится в циклическом
+состоянии процессов разрыхления,
+диспергирования и ротационного движения
+частиц износа. Добавление тонкодисперсного
+порошка ГЕОМ в штатный смазочный материал
+двигателя, механизма, приводит к нарушению
+указанного динамического равновесия
+в сторону восстановления физических
+связей.</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">Самоорганизация
+заключается в наследственной «памяти»
+материала. Входящие в состав ГЕОМ  <SPAN LANG="en-US"><B>Al</B></SPAN><B>
+и </B><SPAN LANG="en-US"><B>Fe</B></SPAN> являются
+катализаторами образования пиролитического
+углерода по границам зерен до
+подповерхностного слоя, а основной
+состав ГЕОМ модифицирует граничный
+слой с высокой степенью свободных связей
+присоединяющих «потерянный» материал
+из дисперсной среды.</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT COLOR="#000000"><B>Технология
+геомодификации узлов трения (ГМТ) </B></FONT><FONT COLOR="#000000">–
+это комплекс методик расчета дозировки,
+способов внесения ГМТ</FONT><FONT COLOR="#000000"><B>
+</B></FONT><FONT COLOR="#000000">в трибоузлы, методик
+приработки различных механизмов,
+приборов и методов контроля.</FONT></FONT></FONT></P>
+<a name="map"></a>
+<h2>Карта проезда к СТО</h2>
+<p>
+    <div id="map_canvas" style="width: 550px; height: 350px; padding: 5px; border: 7px solid #D5D9E3; float: left; margin-right: 10px;">
+        </div>
+<p>
+Наше СТО находится по адресу - <b>г. Днепропетровск, ул. Вологодская, 23</b>. Приемные дни - суббота с 9:00 до 12:00. Возможна <a href="/contacts">предварительная запись</a> на обслуживание в рабочие дни.</p>
+
+<div style="clear: both"></div>
+</p>
+
+<script type="text/javascript">
+  function initialize() {
+    var latlng = new google.maps.LatLng(48.517235, 35.070596);
+    var myOptions = {
+      zoom: 16,
+      center: latlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("map_canvas"),
+        myOptions);
+        
+    var marker = new google.maps.Marker({
+      position: latlng,
+      title:"ООО НПФ Техпромремонт"
+        });
+        
+    marker.setMap(map);  
+
+  }
+  
+  initialize();
+</script>
+
+{% endblock %}

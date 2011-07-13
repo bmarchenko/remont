@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block breadcrumbs %}
+    <div class="breadcrumbs">
+        <a href="/">Главная</a>
+        &#9658;
+        Продукция и услуги
+        &#9658;
+        Сертификаты и патенты
+        
+        
+    </div>
+{% endblock %}
+
+{% block content %}
+    <h1>Сертификаты и патенты</h1>
+    
+    <p>
+        Сетрификаты и патенты нашей компании
+    </p>
+    
+    <div class="img-right-container">
+    {% for i in range %}
+    
+    
+        <a href="{{MEDIA_URL}}/images/patenty/patent-{{i}}.jpg">
+            <img src="{{MEDIA_URL}}/images/patenty/small/patent-{{i}}.jpg" />
+        </a>
+    
+    
+    {% endfor %}
+    </div>
+
+{% endblock %}

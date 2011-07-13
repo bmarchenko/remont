@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block breadcrumbs %}
+    <div class="breadcrumbs">
+        <a href="/">Главная</a>
+        &#9658;
+        <a href="/help">Скорая помощь</a>
+        &#9658;
+        2007 год. ОАО «АрселорМиттал Кривой Рог»
+        
+    </div>
+{% endblock %}
+
+{% block content %}
+    <h1>2007 год. ОАО «АрселорМиттал Кривой Рог»</h1>
+
+<div align="justify" style="padding-top: 10px;">
+    <div class="img-right-container" style="float: right; margin-left: 20px;">
+        <img src="{{MEDIA_URL}}/images/help/help-2007-1.jpg" />
+    </div>
+    
+        <a name="2007"></a>
+              <b>2007 год. ОАО «АрселорМиттал Кривой Рог». Цех Блюминг №2. Редуктор клети 14Г.</b><br />
+Зубчатые передачи редуктора не выдерживают штатных нагрузок, максимум через три месяца происходит их замена, что связано с внеплановыми ремонтами и трудозатратами.<br />
+     Принято решение упрочнить пары трения редуктора при помощи составов ГМТ – геомодификаторов трения. Применялся состав ГМТ-У-1/45.<br />
+
+
+</div>
+
+     <p align="center">
+     <a href="{{MEDIA_URL}}/images/help/help-2007.jpg">
+        <img src="{{MEDIA_URL}}/images/help/small/help-2007.jpg" />
+    </a>
+    </p>
+{% endblock %}

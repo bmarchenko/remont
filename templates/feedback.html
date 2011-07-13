@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block breadcrumbs %}
+    <div class="breadcrumbs">
+        <a href="/">Главная</a>
+        &#9658;
+        Обратная связь
+        &#9658;
+        Отзывы клиентов
+        
+    </div>
+{% endblock %}
+
+
+{% block content %}
+     <div class="main">
+	<h1>Отзывы клиентов</h1>
+        
+        <ul>
+            {% for feedback in feedbacks %}
+              <div class="company">{{ feedback.company }}</div>
+              <ul>
+                    <div class="position">{{ feedback.position }}</div>
+                    <div class="comment">{{ feedback.comment|linebreaks }}</div>
+                </ul>
+            {% endfor %}
+        </ul>
+    
+<h1>Оставить отзыв</h1>
+   <form name="feedback" action="/thank-you/" method="POST"> {% csrf_token %}
+Организация: <input type="text" name="company"  /><br />
+Должность:   <input type="text" name="position"  /><br />
+<TEXTAREA name="comment" rows="15" cols="80" />Оставьте комментарий здесь
+</textarea><br />
+<input type="submit" value="Отправить" />
+</form> 
+{% endblock %}

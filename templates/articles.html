@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block breadcrumbs %}
+    <div class="breadcrumbs">
+        <a href="/">Главная</a>
+        &#9658;
+        Научная деятельность
+        &#9658;
+        Статьи и комментарии
+        
+    </div>
+{% endblock %}
+    
+{% block content %}
+<h1>Статьи и комментарии</h1>
+
+<p style="font-size: 110%">
+    Наши научные статьи и патенты:
+    
+    <ul >
+        <li>
+            
+            <a href="{{MEDIA_URL}}/files/recovery-article.pdf">Описание способа восстановления рабочих поверхностей узлов трения геомодификатора при эксплуатации</a><img src="{{MEDIA_URL}}/images/pdf.jpg">
+        </li>
+        
+        <li>    
+            <a href="{{MEDIA_URL}}/files/patent.pdf">
+                Патент ГМТ смазки
+            </a><img src="{{MEDIA_URL}}/images/pdf.jpg">
+        </li>
+        
+        <li>    
+            <a href="{{MEDIA_URL}}/files/resource_problem_solution.pdf">
+                Преодоление трибобарьера
+            </a><img src="{{MEDIA_URL}}/images/pdf.jpg">
+        </li>
+
+        <li>    
+            <a href="{{MEDIA_URL}}/files/ship_power.pdf">
+                Судовые энергетический установки
+            </a><img src="{{MEDIA_URL}}/images/pdf.jpg">
+        </li>
+
+        <li>    
+            <a href="{{MEDIA_URL}}/files/oil_and_fuel.pdf">
+                Топлива и масла в ДВС
+            </a><img src="{{MEDIA_URL}}/images/pdf.jpg">
+        </li>
+
+        <li>    
+            <a href="{{MEDIA_URL}}/files/physics_fondation.pdf">
+                Физические основы использования геомодификаторов трения
+            </a><img src="{{MEDIA_URL}}/images/pdf.jpg">
+        </li>
+
+        <li>    
+            <a href="{{MEDIA_URL}}/files/holopov.pdf">
+                Пары трения - проблема актуальная. Холопов Ю.В.
+            </a><img src="{{MEDIA_URL}}/images/pdf.jpg">
+        </li>
+        
+        <li>    
+            <a href="{{MEDIA_URL}}/files/shabanov.pdf">
+                Пары по трению. Александр Шабанов.
+            </a><img src="{{MEDIA_URL}}/images/pdf.jpg">
+        </li>
+
+    </ul>
+</p>
+
+<br />
+<br />
+
+{% endblock %}

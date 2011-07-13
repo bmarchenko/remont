@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+{% block breadcrumbs %}
+    <div class="breadcrumbs">
+        <a href="/">Главная</a>
+        &#9658;
+        Обратная связь
+        &#9658;
+        Контакты
+        
+    </div>
+{% endblock %}
+
+{% block content %}
+    <h1>Контакты</h1>
+    
+    <p>
+        <div id="map_canvas" style="float: right; width: 500px; height: 350px; padding: 5px; border: 7px solid #D5D9E3;">
+        </div>
+        
+        <table style="border-bottom: 1px solid #122049; width: 490px; padding-bottom: 10px;" >
+            <tr valign="top" style="">
+                <td >Телефоны:</td>
+                <td>тел/факс (0562) 348-548,<br />
+                    (050) 580-39-97, <br />
+                    (050) 591-84-51, <br />
+                    (050) 607-94-90, <br />
+                    (067) 196-48-64, <br />
+                    (067) 196-48-61, <br />
+                    (067) 196-48-63. <br />
+                </td>
+            </tr>
+            <tr valign="top">
+                <td >E-mail:</td>
+                <td>
+
+                    <script type="text/javascript">
+                        
+                        document.write('<a href=');
+                        document.write('"ma');
+                        document.write('il');
+                        document.write('to:');
+                        document.write(' gmt-');
+                        document.write('2006@');
+                        document.write('mai');
+                        document.write('l.ru">');
+                        document.write(' gmt-');
+                        document.write('2006@');
+                        document.write('mai');
+                        document.write('l.ru');
+                        document.write('</a>');
+                    </script>
+                </td>
+            </tr>
+
+            <tr valign="top">
+                <td>Адрес:</td>
+                <td>
+                    Украина,<br />
+                    г. Днепропетровск,<br />
+                    ул. Софьи Ковалевской 4, оф. 316<br />
+                </td>
+            </tr>
+            
+        </table>
+        
+        <div style="clear: both"></div>
+    </p>
+
+<script type="text/javascript">
+  function initialize() {
+    var latlng = new google.maps.LatLng(48.514156, 35.076075);
+    var myOptions = {
+      zoom: 16,
+      center: latlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("map_canvas"),
+        myOptions);
+        
+    var marker = new google.maps.Marker({
+      position: latlng,
+      title:"ООО НПФ Техпромремонт"
+        });
+        
+    marker.setMap(map);  
+
+  }
+  
+  initialize();
+</script>
+
+
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block breadcrumbs %}
+    <div class="breadcrumbs">
+        <a href="/">Главная</a>
+        &#9658;
+        Результаты
+        &#9658;
+        {% autoescape off %}
+            {{ bread_crumbs }}
+        {% endautoescape %}
+    </div>
+{% endblock %}
+
+{% block content %}
+    <h1>{{page_title}}</h1>
+    
+    <div class="img-right-container" style="float: right; margin-left: 20px;">
+    </div>
+    
+    <p>
+    
+        <ul>
+            {% for dir, path in dirs.items %}
+                <li>
+                    <a href="{{base_url}}{{path}}">{{dir}}</a>
+                 </li>
+            {% endfor %}
+        </ul>
+    </p>
+
+<div class="img-right-container" style="">
+    {% for img, path in images %}
+        <a href="{{MEDIA_URL}}{{path}}"><img width="480" src="{{MEDIA_URL}}{{path}}"/></a>
+    {% endfor %}
+    </div>
+
+
+{% endblock %}
