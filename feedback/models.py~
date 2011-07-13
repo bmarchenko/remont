@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+
+from django.db import models
+from django.contrib import admin
+
+STATUS_CHOICES = (
+    ('г', 'Не опубликовано'),
+    ('p', 'Опубликовано'),
+)
+
+class Feedback1(models.Model):
+    company = models.TextField(max_length=100)
+    position = models.TextField(max_length=100)
+    comment = models.TextField()
+    status = models.CharField(max_length=1, choices=STATUS_CHOICES)
+ 
+    def __unicode__(self):
+       return self.company
+ 
+class FeedbackAdmin1(admin.ModelAdmin):
+    list_display = ['company', 'status']
+    search_fields = ["company"]
+    
+    
+    def make_published(self, request, queryset):
+      queryset.update(status='p')
+    make_published.short_description = "Опубликовать отзыв"
+    
+    actions = [make_published]
+admin.site.register(Feedback1, FeedbackAdmin1)

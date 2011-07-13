@@ -1,0 +1,6 @@
+from remont_dp.feedback.models import Feedback
+
+def feedback(request):
+  feedbacks = Feedback.filter(status = 'p')
+  
+    return render_to_response('feedback.html', {'feedbacks' : feedbacks})
